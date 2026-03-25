@@ -7,7 +7,7 @@
     "authors": [
         {
             "name": "Brent",
-            "email": "brent@nazalas"
+            "email": "brent@brentedds.com"
         }
     ],
     "require": {
@@ -40,7 +40,10 @@
         }
     },
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
     },
     "minimum-stability": "stable",
     "prefer-stable": true,

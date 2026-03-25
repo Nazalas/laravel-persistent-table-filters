@@ -17,17 +17,11 @@ use Nazalas\PersistentTableFilters\Models\TableFilter;
  */
 trait HasPersistentFilters
 {
-    /**
-     * The resource key for this table (e.g. 'campaigns', 'orders').
-     * Override in your component.
-     */
-    protected string $filterResource = '';
-
-    /**
-     * The component property names that make up filter state.
-     * Override in your component to specify which properties to save/restore.
-     */
-    protected array $filterKeys = [];
+    // Do NOT declare $filterResource or $filterKeys here — define them in your class:
+    //
+    //   protected string $filterResource = 'campaigns';
+    //   protected array $filterKeys = ['search', 'sort_by', 'sort_dir'];
+    //
 
     /**
      * Load the default saved filter for this resource on mount, if one exists.
