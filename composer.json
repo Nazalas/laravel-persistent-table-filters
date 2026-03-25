@@ -1,0 +1,50 @@
+{
+    "name": "nazalas/laravel-persistent-table-filters",
+    "description": "Persist and restore table filter, sort, and search state per user in Laravel applications.",
+    "keywords": ["laravel", "filters", "table", "persistent", "livewire", "search", "sort"],
+    "homepage": "https://github.com/Nazalas/laravel-persistent-table-filters",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Brent",
+            "email": "brent@nazalas"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^10.0|^11.0|^12.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.0|^9.0|^10.0",
+        "pestphp/pest": "^2.0|^3.0",
+        "pestphp/pest-plugin-laravel": "^2.0|^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Nazalas\\PersistentTableFilters\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Nazalas\\PersistentTableFilters\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Nazalas\\PersistentTableFilters\\PersistentTableFiltersServiceProvider"
+            ],
+            "aliases": {
+                "PersistentTableFilters": "Nazalas\\PersistentTableFilters\\Facades\\PersistentTableFilters"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "scripts": {
+        "test": "vendor/bin/pest"
+    }
+}
