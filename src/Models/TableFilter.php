@@ -13,11 +13,13 @@ class TableFilter extends Model
         'label',
         'filters',
         'is_default',
+        'is_auto',
     ];
 
     protected $casts = [
-        'filters' => 'array',
+        'filters'    => 'array',
         'is_default' => 'boolean',
+        'is_auto'    => 'boolean',
     ];
 
     public function getTable(): string

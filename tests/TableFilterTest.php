@@ -20,6 +20,7 @@ it('can create a saved filter', function () {
         'label'      => 'Active campaigns',
         'filters'    => ['status' => 'active', 'search' => ''],
         'is_default' => false,
+        'is_auto'    => false,
     ]);
 
     expect($filter)->toBeInstanceOf(TableFilter::class)
